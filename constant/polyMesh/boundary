@@ -35,10 +35,10 @@ FoamFile
         nFaces          400;
         startFace       44900;
     }
-    defaultFaces
+    WALL
     {
-        type            empty;
-        inGroups        List<word> 1(empty);
+        type            wall;
+        inGroups        List<word> 1(wall);
         nFaces          800;
         startFace       45300;
     }
