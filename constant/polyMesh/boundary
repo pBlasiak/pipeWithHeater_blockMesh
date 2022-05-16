@@ -19,28 +19,28 @@ FoamFile
     INLET
     {
         type            patch;
-        nFaces          2000;
-        startFace       355600;
+        nFaces          500;
+        startFace       43900;
     }
     OUTLET
     {
         type            patch;
-        nFaces          2000;
-        startFace       357600;
+        nFaces          500;
+        startFace       44400;
     }
     HEATER
     {
         type            wall;
         inGroups        List<word> 1(wall);
-        nFaces          1600;
-        startFace       359600;
+        nFaces          400;
+        startFace       44900;
     }
-    WALL
+    defaultFaces
     {
         type            empty;
         inGroups        List<word> 1(empty);
-        nFaces          3200;
-        startFace       361200;
+        nFaces          800;
+        startFace       45300;
     }
 )
 
